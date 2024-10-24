@@ -234,6 +234,7 @@ function New-PSTGFunctionParameterTest {
                     # Replace the markers with the content
                     $script = $script.Replace("___TESTCLASS___", $TestClass)
                     $script = $script.Replace("___TESTNAME___", $testName)
+                    $script = $script.Replace("___DATABASE___", $Database)
                     $script = $script.Replace("___SCHEMA___", $functionObject.Schema)
                     $script = $script.Replace("___NAME___", $functionObject.Name)
                     $script = $script.Replace("___CREATOR___", $creator)

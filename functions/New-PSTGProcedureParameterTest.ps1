@@ -235,6 +235,7 @@ function New-PSTGProcedureParameterTest {
                     # Replace the markers with the content
                     $script = $script.Replace("___TESTCLASS___", $TestClass)
                     $script = $script.Replace("___TESTNAME___", $testName)
+                    $script = $script.Replace("___DATABASE___", $Database)
                     $script = $script.Replace("___SCHEMA___", $procedureObject.Schema)
                     $script = $script.Replace("___NAME___", $procedureObject.Name)
                     $script = $script.Replace("___CREATOR___", $creator)
